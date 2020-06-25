@@ -61,7 +61,7 @@ button {
 /* line 39, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
 h1, h2, h3, h4, h5 {
   font-family: "Muli", sans-serif;
-  color: #001D38;
+  color: white;
 }
 
 /* line 43, ../../Arafath/CL/CL October/218 PORTFOLIO/HTML/scss/theme-default.scss */
@@ -1049,11 +1049,12 @@ h3 {
   padding: 12px 26px;
   font-size: 14px;
   font-weight: 500;
-  border: 1px solid transparent;
+  border: 1px solid white;
   color: #fff;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
-  border-radius: 0px;
+  border-radius: 1px;
+  margin: 20px 0px 0px 0px;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
