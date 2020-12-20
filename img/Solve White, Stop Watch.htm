@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5500/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="./Solve White, Stop Watch_files/styles.css">
+        <title>Solve White, Stop Watch</title>
+        <link rel="icon" href="http://localhost:5500/img/icon48.png">
+        <link href="./Solve White, Stop Watch_files/css2" rel="stylesheet">
+    <script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script></head>
+
+    <body style="visibility: hidden;" onload="jsLoad()">
+        <h1 class="title">Solve White, Stop Watch</h1>
+            <main>
+                <div id="scrambleBox" class="scramble-box">
+                    <div id="scrambleAlg"></div>
+                    <button id="scrambleBtn" class="scramble-button"></button>
+                </div>
+                <div class="container">
+                    <h1 class="screen">
+                        <span id="minutes">00</span>&nbsp;&nbsp;:
+                        <span id="seconds">00</span>&nbsp;&nbsp;:
+                        <span id="hundredths">00</span>
+                    </h1>
+                    <p>Click anywhere or tap Spacebar to start, or hold down and release when ready.</p>
+                    <p>Click/tap again to stop!</p>
+                </div>
+            </main>
+            <script src="./Solve White, Stop Watch_files/scripts.js"></script>
+            <script src="./Solve White, Stop Watch_files/scramble.js"></script>
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

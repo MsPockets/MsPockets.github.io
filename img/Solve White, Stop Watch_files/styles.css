@@ -1,0 +1,134 @@
+body {
+    background: url('./img/rubik.jpg') no-repeat center center scroll;
+    background-color: #fff;
+    background-size: cover;
+    height: 100vh;
+    font-family: "Roboto Condensed", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+  height: 25em;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Font Family */
+
+h1 {
+  font-family: 'Cabin Sketch', cursive;
+}
+
+/* Timer */
+.container {
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, .75);
+    padding: 15px;
+    border-radius: 25px;
+    background-color: #3D64FF;
+    width: 50em;
+    max-width: 90vw;
+    height: 17em;
+    position: absolute;
+    bottom: 5vh;
+    margin: auto;
+}
+
+.screen {
+    margin: 0;
+    height: 10rem;
+    background-color: #dee0e3;
+    color: #3D64FF;
+    font-size: 8rem;
+    border-radius: 15px;
+    padding: 1rem;
+    cursor: default;
+    text-align: center;
+    user-select: none;
+}
+
+.screen span {
+    display: inline-block;
+    width: 18%;
+    text-align: center;
+    margin: .5rem 0;
+}
+
+.container p {
+    display: block;
+    color: white;
+    margin: .5rem;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+/* Scramble */
+.scramble-box {
+  display: flex;
+  border-radius: 25px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
+  background-color: #FFF;
+  width: 55em;
+  max-width: 95vw;
+  height: 3em;
+  position: relative;
+  bottom: 5vh;
+}
+
+#scrambleAlg {
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  margin-left: 2%;
+  margin-top: 1.5%;
+  cursor: pointer;
+  max-height: 240px;
+  width: 100%;
+  height: 60%;
+  overflow-y: auto;
+}
+
+.scramble-button {
+  background: url("./img/sync.png") no-repeat center center scroll;
+  background-size: contain;
+  color: #fff;
+  background-color: #3D64FF;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid #3D64FF;
+  border-top-right-radius: 38%;
+  border-bottom-right-radius: 38%;
+  width: 5em;
+  height: 100%;
+}
+
+.scramble-button:hover {
+  color: #3D64FF;
+  background-color: #FFF;
+}
+
+/* Title */
+.title {
+  font-size: 6em;
+  color: #fff;
+  width: 7em;
+  height: 20%;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
